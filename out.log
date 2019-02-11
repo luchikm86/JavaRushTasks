@@ -18875,3 +18875,1380 @@ java.lang.AssertionError: Already disposed: Project (Disposed) java-core-grom
 2019-01-12 23:24:43 INFO  ApacheHttpClient.completed(27) - responseCode = 200
 2019-01-12 23:24:43 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
 2019-01-12 23:24:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:25:33 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:25:33 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:25:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:26:28 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:26:28 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-12 23:26:32 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-12 23:26:34 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:26:34 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:26:36 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:26:36 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:26:36 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:26:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:27:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:28:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@68464a73, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@68464a73, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-12 23:29:00 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorBackSpace
+2019-01-12 23:29:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:30:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:31:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:32:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:33:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:34:29 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:34:29 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:34:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:35:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:36:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:37:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:38:48 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:38:48 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:38:48 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-12 23:38:49 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-12 23:38:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:39:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:40:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:41:34 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:41:36 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-12 23:41:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:42:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:43:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:44:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:45:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:46:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:47:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:48:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:49:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:50:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:51:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:52:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:53:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:54:01 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:54:01 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:54:01 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-12 23:54:02 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-12 23:54:35 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:54:36 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:54:36 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-12 23:54:37 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-12 23:54:37 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-12 23:54:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:55:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:56:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:57:15 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:57:15 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-12 23:57:18 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-12 23:57:21 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:57:21 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:57:22 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-12 23:57:22 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-12 23:57:23 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-12 23:57:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@68464a73, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Project and Libraries]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@68464a73, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Project and Libraries]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaSuperClassNameOccurenceIndex.get(JavaSuperClassNameOccurenceIndex.java:48)
+	at com.intellij.psi.impl.search.JavaDirectInheritorsSearcher.lambda$calculateDirectSubClasses$6(JavaDirectInheritorsSearcher.java:189)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.JavaDirectInheritorsSearcher.calculateDirectSubClasses(JavaDirectInheritorsSearcher.java:189)
+	at com.intellij.psi.impl.search.JavaDirectInheritorsSearcher.getOrCalculateDirectSubClasses(JavaDirectInheritorsSearcher.java:161)
+	at com.intellij.psi.impl.search.JavaDirectInheritorsSearcher.execute(JavaDirectInheritorsSearcher.java:80)
+	at com.intellij.psi.impl.search.JavaDirectInheritorsSearcher.execute(JavaDirectInheritorsSearcher.java:48)
+	at com.intellij.util.ExecutorsQuery.processResults(ExecutorsQuery.java:45)
+	at com.intellij.util.AbstractQuery.forEach(AbstractQuery.java:80)
+	at com.intellij.util.UniqueResultsQuery.process(UniqueResultsQuery.java:67)
+	at com.intellij.util.UniqueResultsQuery.forEach(UniqueResultsQuery.java:57)
+	at com.intellij.psi.impl.search.JavaClassInheritorsSearcher.lambda$getOrComputeSubClasses$7(JavaClassInheritorsSearcher.java:122)
+	at com.intellij.psi.impl.search.LazyConcurrentCollection.processMoreSubclasses(LazyConcurrentCollection.java:172)
+	at com.intellij.psi.impl.search.LazyConcurrentCollection.access$200(LazyConcurrentCollection.java:47)
+	at com.intellij.psi.impl.search.LazyConcurrentCollection$1.hasNext(LazyConcurrentCollection.java:101)
+	at com.intellij.psi.impl.search.JavaClassInheritorsSearcher.processInheritors(JavaClassInheritorsSearcher.java:96)
+	at com.intellij.psi.impl.search.JavaClassInheritorsSearcher.processQuery(JavaClassInheritorsSearcher.java:60)
+	at com.intellij.psi.impl.search.JavaClassInheritorsSearcher.processQuery(JavaClassInheritorsSearcher.java:43)
+	at com.intellij.openapi.application.QueryExecutorBase.execute(QueryExecutorBase.java:91)
+	at com.intellij.util.ExecutorsQuery.processResults(ExecutorsQuery.java:45)
+	at com.intellij.util.AbstractQuery.forEach(AbstractQuery.java:80)
+	at com.intellij.util.UniqueResultsQuery.process(UniqueResultsQuery.java:67)
+	at com.intellij.util.UniqueResultsQuery.forEach(UniqueResultsQuery.java:57)
+	at com.intellij.util.FilteredQuery.forEach(FilteredQuery.java:49)
+	at com.intellij.codeInsight.CodeInsightUtil.processSubTypes(CodeInsightUtil.java:341)
+	at com.intellij.codeInsight.completion.JavaInheritorsGetter.processInheritors(JavaInheritorsGetter.java:240)
+	at com.intellij.codeInsight.completion.JavaInheritorsGetter.generateVariants(JavaInheritorsGetter.java:89)
+	at com.intellij.codeInsight.completion.JavaInheritorsGetter.generateVariants(JavaInheritorsGetter.java:78)
+	at com.intellij.codeInsight.completion.JavaCompletionContributor.addIdentifierVariants(JavaCompletionContributor.java:302)
+	at com.intellij.codeInsight.completion.JavaCompletionContributor.fillCompletionVariants(JavaCompletionContributor.java:251)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.completion.JShellCompletionContributor.fillCompletionVariants(JShellCompletionContributor.java:27)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:61)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-12 23:58:49 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-12 23:58:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-12 23:59:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:00:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:01:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:02:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:03:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:04:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:05:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:06:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:07:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:08:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:09:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:10:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:11:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:12:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:13:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:14:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:15:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:16:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:17:58 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:18:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:19:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:20:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:21:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:22:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:23:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:24:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:25:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:26:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:27:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:28:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:29:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:30:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:31:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:32:49 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:32:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:32:50 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 00:32:51 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-13 00:32:54 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:33:43 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:33:43 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 00:33:43 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:33:44 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-13 00:33:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:34:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:34:53 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:34:54 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 00:34:54 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:34:55 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-13 00:35:05 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:35:05 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 00:35:05 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:35:06 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-13 00:35:06 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 00:35:29 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:35:29 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-13 00:35:32 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-13 00:35:34 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-13 00:35:34 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-13 00:35:35 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-13 00:35:35 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-13 00:35:35 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 00:35:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:36:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:37:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:38:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:39:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:40:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:41:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:42:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:43:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:44:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:45:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:46:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:47:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:47:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:48:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:48:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:49:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:49:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:50:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:50:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:51:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:51:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:52:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:52:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:53:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:53:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:54:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:54:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:55:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:55:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:56:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:56:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:57:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:57:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:58:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:58:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:59:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 00:59:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:00:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:00:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:01:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:01:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:02:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:02:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:03:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:03:50 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-13 01:04:42 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 01:04:42 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 01:04:43 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2019-01-13 01:04:43 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 01:04:44 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 01:05:06 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-13 01:05:06 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-13 01:05:55 INFO  JavaRushTasksProjectComponent.projectClosing(165) - ---------- Project JavaRushTasks closed ----------
+
+2019-01-13 01:05:55 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 01:05:55 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 01:05:55 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 01:05:55 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-13 21:26:57 INFO  JavaRushTasksProjectComponent.projectOpened(68) - ---------- Project JavaRushTasks opened ----------
+2019-01-13 21:26:57 INFO  JavaRushTasksProjectComponent.projectOpened(69) - ---------- Version 3.24 ----------
+
+2019-01-13 21:26:57 INFO  ApacheHttpClient.createAsyncHttpClient(132) - Выбрано 1 прокси. Тип : DIRECT
+2019-01-13 21:26:58 INFO  ApacheHttpClient.<init>(90) - ApacheHttpClient проинстанциирован успешно.
+2019-01-13 21:26:59 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-13 21:26:59 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-13 21:27:00 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-01-13 21:27:01 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-01-13 21:27:01 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-01-13 21:27:01 INFO  ApacheHttpClient.login(235) - responseCode = 200
+2019-01-13 21:27:01 INFO  ApacheHttpClient.login(266) - JSESSIONID OK
+2019-01-13 21:27:01 INFO  ApacheHttpClient.refreshUserInfo(294) - responseCode = 200
+2019-01-13 21:27:01 INFO  ApacheHttpClient.refreshUserInfo(300) - Информация о пользователе получена.
+2019-01-13 21:27:01 INFO  ApacheHttpClient.startGA(31) - GAService запущен.
+2019-01-13 21:27:01 INFO  AbstractRestApiClient.startService(70) - EventsService запущен.
+2019-01-14 03:40:27 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 03:40:27 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-14 03:40:31 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-14 03:40:34 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 03:40:34 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 03:40:36 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 03:40:36 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 03:40:41 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-14 03:40:43 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 03:40:43 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 03:40:45 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 03:40:45 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 03:40:47 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 03:40:48 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 03:41:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:42:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:43:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:44:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:45:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:46:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:47:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:107)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:58)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:107)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:58)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:107)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:58)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:107)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:58)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+java.lang.Throwable: unable to get stub builder for com.intellij.openapi.fileTypes.PlainTextFileType@cc3e12b, , stubBindingRoot = PsiPlainTextFileImpl, languages = [TEXT], fileTypes = [PLAIN_TEXT], files = [PsiPlainTextFileImpl], roots = []
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.handleNonPsiStubs(StubProcessingHelperBase.java:107)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:58)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.error(118) - Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+java.lang.Throwable: Stub index points to a file without PSI: com.intellij.openapi.fileTypes.UnknownFileType@56afadc7, used scope com.intellij.psi.impl.search.JavaSourceFilterScope[Module with dependencies:1.JavaSyntax compile only:true include libraries:true include other modules:true include tests:false]
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.psi.stubs.StubProcessingHelperBase.processStubsInFile(StubProcessingHelperBase.java:51)
+	at com.intellij.psi.stubs.StubIndexImpl$2.process(StubIndexImpl.java:319)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:646)
+	at com.intellij.psi.stubs.StubIndexImpl$StubIdListContainerAction.perform(StubIndexImpl.java:634)
+	at com.intellij.util.indexing.ValueContainer.forEach(ValueContainer.java:61)
+	at com.intellij.psi.stubs.StubIndexImpl.doProcessStubs(StubIndexImpl.java:348)
+	at com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexImpl.java:310)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:145)
+	at com.intellij.psi.stubs.StubIndex.getElements(StubIndex.java:134)
+	at com.intellij.psi.impl.java.stubs.index.JavaShortClassNameIndex.get(JavaShortClassNameIndex.java:53)
+	at com.intellij.psi.impl.PsiShortNamesCacheImpl.getClassesByName(PsiShortNamesCacheImpl.java:65)
+	at com.intellij.psi.impl.CompositeShortNamesCache.getClassesByName(CompositeShortNamesCache.java:76)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.lambda$processClassesByNames$1(AllClassesSearchExecutor.java:82)
+	at com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(DumbService.java:79)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:110)
+	at com.intellij.openapi.project.DumbService.runReadActionInSmartMode(DumbService.java:79)
+	at com.intellij.psi.impl.search.AllClassesSearchExecutor.processClassesByNames(AllClassesSearchExecutor.java:82)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:150)
+	at com.intellij.codeInsight.completion.AllClassesGetter.processJavaClasses(AllClassesGetter.java:136)
+	at com.intellij.codeInsight.completion.JavaClassNameCompletionContributor.addAllClasses(JavaClassNameCompletionContributor.java:142)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.suggestNonImportedClasses(JavaNoVariantsDelegator.java:186)
+	at com.intellij.codeInsight.completion.JavaNoVariantsDelegator.fillCompletionVariants(JavaNoVariantsDelegator.java:76)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:149)
+	at com.intellij.codeInsight.completion.CompletionResultSet.runRemainingContributors(CompletionResultSet.java:142)
+	at com.intellij.codeInsight.template.impl.LiveTemplateCompletionContributor$2.addCompletions(LiveTemplateCompletionContributor.java:90)
+	at com.intellij.codeInsight.completion.CompletionProvider.addCompletionVariants(CompletionProvider.java:36)
+	at com.intellij.codeInsight.completion.CompletionContributor.fillCompletionVariants(CompletionContributor.java:143)
+	at com.intellij.codeInsight.completion.CompletionService.getVariantsFromContributors(CompletionService.java:84)
+	at com.intellij.codeInsight.completion.CompletionService.performCompletion(CompletionService.java:116)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.calculateItems(CompletionProgressIndicator.java:812)
+	at com.intellij.codeInsight.completion.CompletionProgressIndicator.runContributors(CompletionProgressIndicator.java:797)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$null$2(CodeCompletionHandlerBase.java:293)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.completion.AsyncCompletion.tryReadOrCancel(CompletionThreading.java:181)
+	at com.intellij.codeInsight.completion.CodeCompletionHandlerBase.lambda$doComplete$3(CodeCompletionHandlerBase.java:290)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$null$0(CompletionThreading.java:108)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.codeInsight.completion.AsyncCompletion.lambda$startThread$1(CompletionThreading.java:104)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:305)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(136) - OS: Windows 10
+2019-01-14 03:47:53 ERROR StubProcessingHelperBase.logErrorHeader(142) - Last Action: EditorChooseLookupItem
+2019-01-14 03:48:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:48:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:49:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:49:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:50:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:50:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:51:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:51:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:52:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:52:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:53:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:53:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:54:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:54:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:55:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:55:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:56:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:56:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:57:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:57:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:58:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:58:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:59:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 03:59:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:00:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:00:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:00:57 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 04:00:59 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-14 04:01:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:01:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:02:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:02:02 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:02:02 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:03:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:03:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:03:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:04:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:04:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:04:02 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:05:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:05:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:05:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:06:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:06:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:06:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:06:51 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 04:06:51 INFO  ApacheHttpClient.getFilteredTasks(327) - responseCode = 200
+2019-01-14 04:06:53 INFO  ApacheHttpClient.getTaskTemplateInfo(344) - responseCode = 200
+2019-01-14 04:06:55 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 04:06:55 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 04:06:57 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-14 04:06:57 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-14 04:06:57 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-14 04:07:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:08:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:09:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:10:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:11:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:12:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:13:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:14:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:15:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:16:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:17:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:18:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:19:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:20:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:21:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:22:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:23:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:24:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:25:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:26:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:27:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:28:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:29:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:30:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:31:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:32:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:33:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:34:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:35:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:36:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:37:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:38:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:39:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:40:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:41:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:42:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:43:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:44:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:45:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:46:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:47:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:48:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:49:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:50:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:51:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:52:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:53:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:54:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:55:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:56:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:57:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:58:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 04:59:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:00:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:01:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:02:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:03:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:04:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:05:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:06:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:07:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:08:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:09:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:10:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:11:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:12:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:13:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:14:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:15:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:16:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:17:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:18:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:19:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:20:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:21:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:22:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:23:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:24:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:25:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:26:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:27:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:28:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:29:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:30:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:31:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:32:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:33:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:34:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:35:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:36:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:37:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:38:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:39:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:40:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:41:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:42:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:43:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:44:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:45:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:46:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:47:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:48:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:49:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:50:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:51:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:52:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:53:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:54:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:55:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:56:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:57:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:58:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 05:59:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 06:00:01 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 06:02:11 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 06:02:11 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-14 06:03:21 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:04:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:10:59 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:11:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:12:15 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:12:15 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:13:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:13:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:14:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:14:01 ERROR ApacheHttpClient.processExceptionSendEvent(102) - (super) Ошибка во время отправки ивента на сервер.
+2019-01-14 06:14:44 INFO  JavaRushTasksProjectComponent.projectClosing(165) - ---------- Project JavaRushTasks closed ----------
+
+2019-01-14 06:14:44 ERROR ApacheHttpClient.getTask(480) - Ошибка во время выгрузки задачи. Убедитесь в доступности сети и попробуйте снова. : java.util.concurrent.ExecutionException
+2019-01-14 06:14:44 ERROR ApacheHttpClient.getTask(480) - Ошибка во время выгрузки задачи. Убедитесь в доступности сети и попробуйте снова. : java.util.concurrent.ExecutionException
+2019-01-14 06:14:44 ERROR ApacheHttpClient.getTask(480) - Ошибка во время выгрузки задачи. Убедитесь в доступности сети и попробуйте снова. : java.util.concurrent.ExecutionException
+2019-01-14 06:14:44 ERROR ApacheHttpClient.getTask(480) - Ошибка во время выгрузки задачи. Убедитесь в доступности сети и попробуйте снова. : java.util.concurrent.ExecutionException
+2019-01-14 06:14:44 ERROR ApacheHttpClient.getTask(480) - Ошибка во время выгрузки задачи. Убедитесь в доступности сети и попробуйте снова. : java.util.concurrent.ExecutionException
+2019-01-29 21:04:36 INFO  JavaRushTasksProjectComponent.projectOpened(68) - ---------- Project JavaRushTasks opened ----------
+2019-01-29 21:04:36 INFO  JavaRushTasksProjectComponent.projectOpened(69) - ---------- Version 3.24 ----------
+
+2019-01-29 21:04:36 INFO  ApacheHttpClient.createAsyncHttpClient(132) - Выбрано 1 прокси. Тип : DIRECT
+2019-01-29 21:04:37 INFO  ApacheHttpClient.<init>(90) - ApacheHttpClient проинстанциирован успешно.
+2019-01-29 21:04:37 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:04:37 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:04:38 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-01-29 21:04:38 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-01-29 21:04:38 INFO  ApacheHttpClient.login(235) - responseCode = 200
+2019-01-29 21:04:38 INFO  ApacheHttpClient.login(266) - JSESSIONID OK
+2019-01-29 21:04:38 INFO  ApacheHttpClient.refreshUserInfo(294) - responseCode = 200
+2019-01-29 21:04:38 INFO  ApacheHttpClient.refreshUserInfo(300) - Информация о пользователе получена.
+2019-01-29 21:04:38 INFO  ApacheHttpClient.startGA(31) - GAService запущен.
+2019-01-29 21:04:38 INFO  AbstractRestApiClient.startService(70) - EventsService запущен.
+2019-01-29 21:04:51 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:04:51 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:04:53 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:04:53 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:05:01 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:05:01 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:05:13 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-01-29 21:05:39 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-29 21:05:39 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-01-29 21:05:46 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:05:46 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:05:53 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:05:53 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:05:57 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-01-29 21:05:57 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-01-29 21:06:17 INFO  JavaRushTasksProjectComponent.projectClosing(165) - ---------- Project JavaRushTasks closed ----------
+
+2019-01-29 21:06:18 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-29 21:06:18 INFO  ApacheHttpClient.getTask(475) - responseCode = 200
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.error(118) - Outdated stub in index: file://E:/Sobutylnik/Sobytylnik1/pom.xml null, doc=DocumentImpl[file://E:/Sobutylnik/Sobytylnik1/pom.xml], docSaved=true, wasIndexedAlready=true, queried at 1546942412000
+indexed lengths={chars=-1, bytes=1588}
+doc length=3031
+file length=3031
+cached PSI class com.intellij.psi.impl.source.xml.XmlFileImpl
+projects with file: 1
+java.lang.Exception
+	at com.intellij.psi.stubs.StubTreeLoaderImpl.diagnoseLengthMismatch(StubTreeLoaderImpl.java:175)
+	at com.intellij.psi.stubs.StubTreeLoaderImpl.checkLengthMatch(StubTreeLoaderImpl.java:145)
+	at com.intellij.psi.stubs.StubTreeLoaderImpl.readFromVFile(StubTreeLoaderImpl.java:113)
+	at com.intellij.util.xml.impl.DomServiceImpl.a(DomServiceImpl.java:76)
+	at com.intellij.util.xml.impl.DomServiceImpl.access$000(DomServiceImpl.java:56)
+	at com.intellij.util.xml.impl.DomServiceImpl$1.a(DomServiceImpl.java:62)
+	at com.intellij.psi.impl.PsiCachedValueImpl.doCompute(PsiCachedValueImpl.java:49)
+	at com.intellij.util.CachedValueBase.getValueWithLock(CachedValueBase.java:222)
+	at com.intellij.psi.impl.PsiCachedValue.getValueWithLock(PsiCachedValue.java:60)
+	at com.intellij.psi.impl.PsiCachedValueImpl.getValue(PsiCachedValueImpl.java:38)
+	at com.intellij.util.xml.impl.DomServiceImpl.getXmlFileHeader(DomServiceImpl.java:157)
+	at com.intellij.util.xml.impl.FileDescriptionCachedValueProvider.getFileElement(FileDescriptionCachedValueProvider.java:68)
+	at com.intellij.util.xml.impl.DomManagerImpl.getFileElement(DomManagerImpl.java:344)
+	at com.intellij.util.xml.impl.DomManagerImpl.getFileElement(DomManagerImpl.java:71)
+	at com.intellij.util.xml.DomManager.getDomFileDescription(DomManager.java:173)
+	at com.intellij.util.xml.DomFileIconProvider.getIcon(DomFileIconProvider.java:34)
+	at com.intellij.util.PsiIconUtil.getProvidersIcon(PsiIconUtil.java:42)
+	at com.intellij.psi.impl.ElementBase.computeIconNow(ElementBase.java:101)
+	at com.intellij.psi.impl.ElementBase.lambda$static$0(ElementBase.java:45)
+	at com.intellij.ui.DeferredIconImpl.evaluate(DeferredIconImpl.java:278)
+	at com.intellij.ui.DeferredIconImpl.lambda$null$0(DeferredIconImpl.java:163)
+	at com.intellij.ui.IconDeferrerImpl.evaluateDeferred(IconDeferrerImpl.java:122)
+	at com.intellij.ui.DeferredIconImpl.lambda$null$1(DeferredIconImpl.java:163)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.lambda$runInReadActionWithWriteActionPriority$0(ProgressIndicatorUtils.java:84)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.lambda$runWithWriteActionPriority$2(ProgressIndicatorUtils.java:140)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:157)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:144)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runWithWriteActionPriority(ProgressIndicatorUtils.java:138)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runInReadActionWithWriteActionPriority(ProgressIndicatorUtils.java:84)
+	at com.intellij.openapi.progress.util.ProgressIndicatorUtils.runInReadActionWithWriteActionPriority(ProgressIndicatorUtils.java:105)
+	at com.intellij.ui.DeferredIconImpl.lambda$paintIcon$4(DeferredIconImpl.java:162)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$2.run(BoundedTaskExecutor.java:212)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(126) - IntelliJ IDEA 2018.1.3  Build #IU-181.4892.42
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(133) - JDK: 1.8.0_152-release
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(136) - OS: Windows 10
+2019-01-29 21:19:09 ERROR StubTreeLoaderImpl.logErrorHeader(142) - Last Action: OpenFile
+2019-02-11 22:11:29 INFO  JavaRushTasksProjectComponent.projectOpened(68) - ---------- Project JavaRushTasks opened ----------
+2019-02-11 22:11:29 INFO  JavaRushTasksProjectComponent.projectOpened(69) - ---------- Version 3.24 ----------
+
+2019-02-11 22:11:29 INFO  ApacheHttpClient.createAsyncHttpClient(132) - Выбрано 1 прокси. Тип : DIRECT
+2019-02-11 22:11:29 INFO  ApacheHttpClient.<init>(90) - ApacheHttpClient проинстанциирован успешно.
+2019-02-11 22:11:30 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:11:30 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:11:31 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-02-11 22:11:31 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-02-11 22:11:31 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-02-11 22:11:31 INFO  ApacheHttpClient.login(231) - Ожидание ответа сервера.
+2019-02-11 22:11:32 INFO  ApacheHttpClient.login(235) - responseCode = 200
+2019-02-11 22:11:32 INFO  ApacheHttpClient.login(266) - JSESSIONID OK
+2019-02-11 22:11:32 INFO  ApacheHttpClient.refreshUserInfo(294) - responseCode = 200
+2019-02-11 22:11:32 INFO  ApacheHttpClient.refreshUserInfo(300) - Информация о пользователе получена.
+2019-02-11 22:11:32 INFO  ApacheHttpClient.startGA(31) - GAService запущен.
+2019-02-11 22:11:32 INFO  AbstractRestApiClient.startService(70) - EventsService запущен.
+2019-02-11 22:11:38 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:11:38 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:11:41 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:11:41 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:11:44 INFO  ApacheHttpClient.getWebResourceAsStream(490) - responseCode = 200
+2019-02-11 22:11:44 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:11:44 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:11:58 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:11:58 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:12:00 INFO  ApacheHttpClient.testConnection(190) - responseCode = 200
+2019-02-11 22:12:00 INFO  ApacheHttpClient.testConnection(201) - result = true
+2019-02-11 22:12:32 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
+2019-02-11 22:12:32 INFO  ApacheHttpClient.sendEvent(523) - responseCode = 200
