@@ -31,6 +31,11 @@ public class Solution {
             int count = Collections.frequency(copy.values(), pair.getValue());
             if (count > 1)
                 removeItemFromMapByValue(map, pair.getValue());
+            
+//             или
+//            if (Collections.frequency(copy.values(), pair.getValue()) > 1) {
+//                removeItemFromMapByValue(map, pair.getValue());
+//            }
 
         }
 
