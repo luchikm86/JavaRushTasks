@@ -16,7 +16,7 @@ public class Solution {
         map.put("Pupkin", 670);
         map.put("Shtirlic", 367);
         map.put("Solomkin", 500);
-        map.put("Bosoy", 1345);
+        map.put("Bosoy", 345);
         map.put("Chonkin", 987);
         map.put("Zhul", 1100);
         map.put("Kusto", 990);
@@ -24,10 +24,18 @@ public class Solution {
     }
 
     public static void removeItemFromMap(HashMap<String, Integer> map) {
-        //напишите тут ваш код
+        HashMap<String, Integer> copy = new HashMap<String, Integer>(map);
+        for (Map.Entry<String, Integer> pair : copy.entrySet()) {
+            if (pair.getValue() < 500) // если значение больше 500
+                map.remove(pair.getKey()); //берем ячейки ключ и удаляем ячейку с мапы
+        }
     }
 
     public static void main(String[] args) {
+//        HashMap map = createMap();
+//        removeItemFromMap(map);
+//        System.out.println(map);
+
 
     }
 }
