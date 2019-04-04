@@ -27,23 +27,26 @@ public class Solution {
 
     public static void removeTheFirstNameDuplicates(Map<String, String> map) {
         HashMap<String, String> copy = new HashMap<>(map);
-        for (Map.Entry<String, String> pair : copy.entrySet()) {
-            int count = Collections.frequency(copy.values(), pair.getValue());
-            if (count > 1)
-                removeItemFromMapByValue(map, pair.getValue());
-
-        }
-
-
-    }
-
-    public static void removeItemFromMapByValue(Map<String, String> map, String value) {
-        HashMap<String, String> copy = new HashMap<>(map);
         for (Map.Entry<String, String> pair : copy.entrySet()) {          ////iterator
             int m = Collections.frequency(copy.values(), pair.getValue());////count frequency of all value
             if (m > 1)
                 removeItemFromMapByValue(map, pair.getValue());                        ////remove key with duplicate value
 
+        }
+
+        //             или
+//            if (Collections.frequency(copy.values(), pair.getValue()) > 1) {
+//                removeItemFromMapByValue(map, pair.getValue());
+//            }
+
+
+    }
+
+    public static void removeItemFromMapByValue(Map<String, String> map, String value) {
+        HashMap<String, String> copy = new HashMap<String, String>(map);
+        for (Map.Entry<String, String> pair : copy.entrySet()) {
+            if (pair.getValue().equals(value))
+                map.remove(pair.getKey());
         }
     }
 
